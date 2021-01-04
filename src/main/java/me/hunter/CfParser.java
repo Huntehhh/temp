@@ -13,11 +13,11 @@ public class CfParser {
     @PostMapping("/postTesting")
     @ResponseStatus(HttpStatus.CREATED)
     public void createSm(@RequestBody String bodyString) throws JSONException {
-        //JSONObject json = m.convertToJson(bodyString);
+        System.out.println("Lol");
 
     }
 
-    @GetMapping("/2parser")
+    @GetMapping("/textParser")
     public String parser(@RequestParam(value = "cf") String cf) {
         String replaced = cf.replaceAll("-", ",");
         String[] strArr = replaced.split(",", 999);
