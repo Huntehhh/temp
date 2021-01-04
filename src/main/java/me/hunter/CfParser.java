@@ -23,7 +23,6 @@ public class CfParser {
         String[] strArr = replaced.split(",", 999);
         int i = 1;
         JSONObject json = new JSONObject();
-        String s = "l";
 
         for(String s : strArr) {
             json.put("cf" + i, s);
